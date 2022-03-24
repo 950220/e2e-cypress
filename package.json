@@ -1,0 +1,25 @@
+{
+  "name": "e2e-cypress",
+  "version": "1.0.0",
+  "description": "使用cpress进行e2e自动化测试项目",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node cypress/generate.js",
+    "test": "npm run generate && npm run cypress:open",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/950905/e2e-cypress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/950905/e2e-cypress/issues"
+  },
+  "homepage": "https://github.com/950905/e2e-cypress#readme",
+  "devDependencies": {
+    "cypress": "^9.5.2",
+    "cypress-xpath": "^1.6.2"
+  }
+}

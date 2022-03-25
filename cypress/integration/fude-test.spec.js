@@ -2,8 +2,6 @@
 // @ts-ignore
 import channels from "../channels/fude-test.js";
 import login from '../setLogin'
-import operation from '../operation'
-import finElement from "../findElement";
 
 const {messages, steps} = channels
 describe(messages.name, async () => {
@@ -25,6 +23,10 @@ describe(messages.name, async () => {
       switch(opera.operation) {
         case 'click':
           await cy.xpath(opera.value).click()
+          break
+        case 'input':
+          await cy.xpath(opera.value).type(opera.insertValue+'')
+          break
         default:
           break
       }

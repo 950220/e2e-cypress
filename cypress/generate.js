@@ -21,8 +21,22 @@ describe(messages.name, async () => {
 
   it(messages.name, async () => {
     for (const opera of steps) {
-      const element = await finElement(opera)
-      await operation(element, opera)
+      switch(opera.findType) {
+        case 'xpath':
+          await cy.xpath(opera.value, {timeout: 10000}).should('be.visible')
+          break
+        default:
+          break
+      }
+      switch(opera.operation) {
+        case 'click':
+          await cy.xpath(opera.value).click()
+        case 'input':
+            await cy.xpath(opera.value).type(opera.insertValue+'')
+            break
+        default:
+          break
+      }
     }
   })
 })`

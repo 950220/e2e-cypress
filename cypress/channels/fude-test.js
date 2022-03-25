@@ -1,9 +1,9 @@
 export default {
   "messages": {
     "name": "富徳测试",
-    "url": "https://web.yingbaobei.com.cn/front/product/g10027",
+    "url": "https://web.insnail.com/front/product/g10027",
     "cookieType": "common",
-    "domain": ".yingbaobei.com.cn"
+    "domain": ".insnail.com"
   },
   "steps": [
     {
@@ -30,7 +30,7 @@ export default {
     {
       "operation": "click",
       "findType": "xpath",
-      "value": "//html/body/div[2]/div[2]/div[1]/div[1]/div[2]/div/div/div/span/input",
+      "value": "//html/body/div[2]/div[2]/div[1]/div[1]/div[2]/div/div/div/span",
       "step": 4,
       "tip": "选择投保人"
     },
@@ -38,21 +38,21 @@ export default {
     {
       "operation": "click",
       "findType": "xpath",
-      "value": "//html/body/div[2]/div[2]/div[1]/div[2]/div[2]/div/div/div/span/input",
+      "value": "//html/body/div[2]/div[2]/div[1]/div[2]/div[2]/div/div/div/span",
       "step": 4,
       "tip": "选择被保人"
     },
     {
       "operation": "click",
       "findType": "xpath",
-      "value": "//html/body/div[2]/div[2]/div[1]/div[3]/div[5]/div/div[2]/div/div/div[1]/span/input",
+      "value": "//html/body/div[2]/div[2]/div[1]/div[3]/div[5]/div/div[2]/div/div/div[1]/span",
       "step": 5,
       "tip": "选择非自动续保"
     },
     {
       "operation": "click",
       "findType": "xpath",
-      "value": "//html/body/div[2]/div[2]/div[1]/div[2]/div[4]/div/div[2]/div/div/div",
+      "value": "//html/body/div[2]/div[2]/div[1]/div[2]/div[4]/div/div[2]",
       "step": 6,
       "tip": "选择投保人关系"
     },
@@ -66,7 +66,7 @@ export default {
     {
       "operation": "click",
       "findType": "xpath",
-      "value": "//html/body/div[2]/div[2]/div[1]/div[2]/div[5]/div/div[2]/div",
+      "value": "//html/body/div[2]/div[2]/div[1]/div[2]/div[5]/div/div[2]",
       "step": 8,
       "tip": "选择职业"
     },
@@ -161,13 +161,13 @@ export default {
       "step": 21,
       "tip": "下一步"
     },
-    {
-      "operation": "click",
-      "findType": "xpath",
-      "value": "//html/body/div[2]/div[3]/div/a",
-      "step": 22,
-      "tip": "确认订单"
-    },
+    // {
+    //   "operation": "click",
+    //   "findType": "xpath",
+    //   "value": "//html/body/div[2]/div[3]/div/a",
+    //   "step": 22,
+    //   "tip": "确认订单"
+    // },
     // {
     //   "operation": "changePage",
     //   "findType": "changePage",
